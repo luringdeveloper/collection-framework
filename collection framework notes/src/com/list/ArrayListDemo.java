@@ -19,19 +19,21 @@ public class ArrayListDemo{
 		//not thread safe
 		//50% size increase
 		//less space
+		//null support
 		ArrayList<Integer> rolls=new ArrayList<Integer>();
+		
 		
 		//add
 		rolls.add(1);
 		rolls.add(1, 2);
 		rolls.add(3);
-		
-	
-		//System.out.println(rolls);
-		
+		rolls.add(null);
+		System.out.println(rolls.size());
+		System.out.println(rolls);
+			
 		//get object from index basis
 		//System.out.println(rolls.get(0));
-		
+	
 		//set
 		//for update
 		//rolls.set(0, 3);
